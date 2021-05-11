@@ -9,5 +9,14 @@ public abstract class Pet extends Entity implements Serializable {
         super.setName(name);
     }
 
+    public void Chatch(Entity[] entity) {
+
+    }
+
+    public void Chatch(Entity entity) {
+
+
+
+    }
 
 }

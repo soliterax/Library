@@ -4,6 +4,7 @@ import com.Library.Systems.Rarity;
 
 import java.io.Serializable;
 import java.util.LinkedList;
+
 @SuppressWarnings("unused")
 public abstract class ItemStack extends Material implements Serializable {
     private static final long serialVersionUID = 1000;
@@ -16,8 +17,8 @@ public abstract class ItemStack extends Material implements Serializable {
     Rarity rarity = Rarity.Trash;
     int upgrade = 0;
     int[] upgrades = new int[] {};
-    LinkedList<Long> expMax = new LinkedList<Long>();
-    LinkedList<Enchant> enchants = new LinkedList<Enchant>();
+    LinkedList<Long> expMax = new LinkedList<>();
+    LinkedList<Enchant> enchants = new LinkedList<>();
 
     public String getName() {
         return name;

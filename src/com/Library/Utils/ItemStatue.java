@@ -1,5 +1,6 @@
 package com.Library.Utils;
 
+@SuppressWarnings("unused")
 public abstract class ItemStatue {
 
     String ItemStatue_Name;

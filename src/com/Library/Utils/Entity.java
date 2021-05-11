@@ -10,6 +10,7 @@ public abstract class Entity implements Serializable {
 
     String name;
     int level;
+    CharacterInfoBar[] Bars;
     StatuePoint[] Points;
     CharacterClass characterClass;
     Rank rank;
