@@ -1,4 +1,4 @@
-package com.Library.Systems;
+package com.Library.RPG.Systems;
 
 @SuppressWarnings("unused")
 public enum Rarity {

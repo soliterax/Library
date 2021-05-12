@@ -1,4 +1,4 @@
-package com.Library.Utils;
+package com.Library.RPG.Utils;
 
 public abstract class CharacterClass {
 

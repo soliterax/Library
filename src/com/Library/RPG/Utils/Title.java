@@ -1,11 +1,11 @@
-package com.Library.Utils;
+package com.Library.RPG.Utils;
 
 @SuppressWarnings("unused")
 public abstract class Title {
 
     String name;
     String[] lore;
-    com.Library.Utils.Effect[] effects;
+    com.Library.RPG.Utils.Effect[] effects;
 
     public String getInfoScreen() {
         String raw = "";

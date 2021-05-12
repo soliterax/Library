@@ -1,4 +1,4 @@
-package com.Library.Utils;
+package com.Library.RPG.Utils;
 
 
 import java.io.Serializable;
@@ -14,6 +14,7 @@ public abstract class Entity implements Serializable {
     StatuePoint[] Points;
     CharacterClass characterClass;
     Rank rank;
+    Guild.User Guild_Rank;
     Title[] titles;
     Blessing[] blessings;
 
@@ -194,6 +195,14 @@ public abstract class Entity implements Serializable {
         this.rank = rank;
     }
 
+    public Guild.User getGuild_Rank() {
+        return Guild_Rank;
+    }
+
+    public void setGuild_Rank(Guild.User guild_Rank) {
+        Guild_Rank = guild_Rank;
+    }
+
     public Title[] getTitles() {
         return titles;
     }
@@ -264,5 +273,21 @@ public abstract class Entity implements Serializable {
 
     public void setToolInventory(LinkedList<ItemStack> toolInventory) {
         this.toolInventory = toolInventory;
+    }
+
+    public CharacterInfoBar[] getBars() {
+        return Bars;
+    }
+
+    public void setBars(CharacterInfoBar[] bars) {
+        Bars = bars;
+    }
+
+    public Blessing[] getBlessings() {
+        return blessings;
+    }
+
+    public void setBlessings(Blessing[] blessings) {
+        this.blessings = blessings;
     }
 }

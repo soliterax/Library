@@ -1,4 +1,4 @@
-package com.Library.Utils;
+package com.Library.RPG.Utils;
 
 @SuppressWarnings("unused")
 public abstract class Effect {

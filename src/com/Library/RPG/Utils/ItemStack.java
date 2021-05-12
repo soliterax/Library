@@ -1,6 +1,6 @@
-package com.Library.Utils;
+package com.Library.RPG.Utils;
 
-import com.Library.Systems.Rarity;
+import com.Library.RPG.Systems.Rarity;
 
 import java.io.Serializable;
 import java.util.LinkedList;
