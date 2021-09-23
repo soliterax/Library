@@ -1,12 +1,15 @@
 package com.Library.RPG.Utils;
 
 import javafx.scene.control.TreeView;
+import java.util.Arrays;
+import java.util.LinkedList;
 
 @SuppressWarnings("unused")
 public class Guild {
     public abstract class User {
         String Guild_ID;
         Rank Guild_Rank;
+        LinkedList<ItemStack> Guild_Items = new LinkedList<>();
 
         public String getGuild_ID() {
             return Guild_ID;
@@ -31,6 +34,7 @@ public class Guild {
         String Guild_Description;
         Long Guild_Cup;
         TreeView<Entity> Guild_User;
+        LinkedList<ItemStack> Guild_Items = new LinkedList<>();
 
         public String getGuild_Name() {
             return Guild_Name;
@@ -52,6 +56,10 @@ public class Guild {
             return Guild_Description;
         }
 
+        public ItemStack[] getAllGuildItems() {
+            return (ItemStack[]) Guild_Items.stream().toArray();
+        }
+
         public void setGuild_Description(String guild_Description) {
             Guild_Description = guild_Description;
         }
@@ -70,6 +78,14 @@ public class Guild {
 
         public void setGuild_User(TreeView<Entity> guild_User) {
             Guild_User = guild_User;
+        }
+
+        public void setGuild_Items(ItemStack[] items) {
+            LinkedList<ItemStack> item = new LinkedList<>();
+            for(int i = 0; i < items.length; i++) {
+                item.add(items[i]);
+            }
+            Guild_Items = item;
         }
     }
 
